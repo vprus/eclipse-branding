@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.core.runtime.products" id="product">
+         
+         <product name="Example Eclipse Product" application="org.eclipse.ui.ide.workbench">
+            <property name="appName" value="Example Eclipse Product"/>          
+            <property name="windowImages" value="images/csl16.png,images/csl32.png,images/csl48.png"/> 
+            <property name="aboutImage" value="images/IDE_about.png"/> 
+            <property name="aboutText" value="About text for the example product."/>  
+            <property
+               name="startupProgressRect"
+               value="1,281,453,13"/>
+            <property
+               name="introTitle"
+               value="Welcome to the Example Product"/>
+            <property 
+               name="introBrandingImage"
+               value="product:images/IDE_welcome_mini.png"/>
+            <property 
+               name="introBrandingImageText"
+               value="Branding Image test"/>
+            <property
+               name="introDescription-overview"
+               value="Description Overview"/>
+      </product>
+   </extension>
+   
+   <extension point="org.eclipse.ui.intro" id="intro" name="Welcome">
+      <introProductBinding
+            introId="org.eclipse.ui.intro.universal"
+            productId="com.codesourcery.seed.product.product"/>
+    </extension>
+
+</plugin>

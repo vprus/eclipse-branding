@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.codesourcery.seed.product"
+      label="Example Product Feature"
+      version="1.0.0.qualifier"
+      plugin="com.codesourcery.seed.product">
+
+   <description>
+      Example Product Feature. Bring in functional feature and adds product branding.
+   </description>
+   
+   <copyright>
+      Copyright (C) 2015 Mentor Graphics.
+   </copyright>
+
+   <license url="">
+      Sample License Agreement
+
+This is license for the product feature, specified in feature.xml
+   </license>   
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"/>
+
+   <includes
+         id="com.codesourcery.seed"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="com.codesourcery.seed.product"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
