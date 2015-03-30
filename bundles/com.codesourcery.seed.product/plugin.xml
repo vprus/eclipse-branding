@@ -3,14 +3,12 @@
 <plugin>
    <extension point="org.eclipse.core.runtime.products" id="product">
          
-         <product name="Example Eclipse Product" application="org.eclipse.ui.ide.workbench">
-            <property name="appName" value="Example Eclipse Product"/>          
-            <property name="windowImages" value="images/csl16.png,images/csl32.png,images/csl48.png"/> 
-            <property name="aboutImage" value="images/IDE_about.png"/> 
-            <property name="aboutText" value="About text for the example product."/>  
+         <product
+               application="org.eclipse.ui.ide.workbench"
+               name="Example Eclipse Product">
             <property
-               name="startupProgressRect"
-               value="1,281,453,13"/>
+                  name="appName"
+                  value="Example Eclipse Product"/>          
             <property
                name="introTitle"
                value="Welcome to the Example Product"/>
@@ -23,6 +21,18 @@
             <property
                name="introDescription-overview"
                value="Description Overview"/>
+            <property
+                  name="aboutImage"
+                  value="images/IDE_about.png">
+            </property>
+            <property
+                  name="aboutText"
+                  value="About text for the example product.">
+            </property>
+            <property
+                  name="windowImages"
+                  value="images/csl16.png,images/csl32.png,images/csl48.png">
+            </property>
       </product>
    </extension>
    
