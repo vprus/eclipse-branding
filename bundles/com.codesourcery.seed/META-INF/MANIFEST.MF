@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example Functional Plugin
+Bundle-SymbolicName: com.codesourcery.seed; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Mentor Graphics
+Bundle-ClassPath: plugin.jar
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui.workbench
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Activator: com.codesourcery.seed.SeedPlugin

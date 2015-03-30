@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.codesourcery.seed"
+      label="Example Functional Feature"
+      version="1.0.0.qualifier"
+      plugin="com.codesourcery.seed">
+
+   <description>
+      Example Functional Feature. Does not do anything other than showing up in about box, and various other dialogs.
+   </description>
+
+   <copyright>
+      Copyright (C) 2015 Mentor Graphics.
+   </copyright>
+
+   <license url="">
+      Sample License Agreement
+
+This is license for the functional feature, specified in feature.xml
+   </license>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.intro" version="3.4.200" match="greaterOrEqual"/>
+      <import plugin="com.codesourcery.seed" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+   </requires>
+
+   <plugin
+         id="com.codesourcery.seed"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
